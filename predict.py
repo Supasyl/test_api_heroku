@@ -1,6 +1,7 @@
 from flask_restful import Api, Resource, reqparse
 import numpy as np
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
+import joblib
 # Load prebuilt model
 IRIS_MODEL = joblib.load('iris.smd')
 

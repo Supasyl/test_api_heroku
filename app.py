@@ -19,7 +19,8 @@ API = Api(app)
 
 # Load database
 from flask_sqlalchemy import SQLAlchemy
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///db.sqlite" #os.environ.get('DATABASE_URL', '') or 
+app.config['SQLALCHEMY_DATABASE_URI'] =  os.environ.get('postgres://dxqazojhixqtlk:4dd76b051b1ed58f44567dc5f77a2bbdeccf548cb1c520604de9da42e10e3a79@ec2-35-171-57-132.compute-1.amazonaws.com:5432/d3ku8qcf031e4p
+', '') or #"sqlite:///db.sqlite"
 
 # Remove tracking modifications
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
